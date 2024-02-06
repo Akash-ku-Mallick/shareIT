@@ -1,0 +1,31 @@
+.custom_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border: greenyellow 1px solid;
+}
+
+.sidebar_option {
+  min-height: auto;
+  min-width: auto;
+}
+
+@media (pointer: coarse)  {
+	/* mobile device */
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media (pointer: fine), (pointer: none) {
+	/* desktop */
+  :root {
+    font-size: 18px;
+  }
+}

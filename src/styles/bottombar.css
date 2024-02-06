@@ -1,0 +1,27 @@
+.bottombar_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    border: rgb(255, 127, 47) 1px solid;
+}
+
+@media (pointer: coarse)  {
+	/* mobile device */
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media (pointer: fine), (pointer: none) {
+	/* desktop */
+  :root {
+    font-size: 18px;
+  }
+}

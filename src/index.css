@@ -1,0 +1,166 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+div {
+  min-width: 475px;
+  min-height: 200px;
+}
+
+.main_body {
+  height: 100%;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(0, 0%, 12%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 26%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 33%);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: hsl(0, 0%, 45%);
+}
+
+.form_container {
+  width: 450px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 450px;
+  min-height: fit-content;
+  border: greenyellow 1px solid;
+  padding-block: 1rem;
+}
+
+.text_input {
+  min-height: auto;
+  min-width: none;
+  margin: 0.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+form button {
+  min-height: 50px;
+  min-width: 100px;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: beige;
+}
+
+.text_input label {
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+
+.text_input input {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #000000;
+  border-radius: 0.5rem;
+}
+
+/* adjust with theme */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(183, 183, 183, 0.5);
+  backdrop-filter: blur(5px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.modal_content {
+  min-width: 410px;
+  min-height: none;
+  
+  margin-left: 5px;
+  margin-right: 5px;
+
+  border-radius: 1rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+  justify-content: center;
+  align-content: center;
+  z-index: 2;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #bababa;
+    background-color: #242424;
+  }
+  
+  button {
+    background-color: #606060;
+    color: rgb(222, 222, 222);
+  }
+}
+
+/* adjustment with devices  */
+
+@media (pointer: coarse)  {
+	/* mobile device */
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media (pointer: fine), (pointer: none) {
+	/* desktop */
+  :root {
+    font-size: 18px;
+  }
+}
+
